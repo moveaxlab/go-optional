@@ -65,4 +65,3 @@ func (o Optional[T]) OrElsePanic(err error) *T {
 	}
 	return o.value
 }
-
