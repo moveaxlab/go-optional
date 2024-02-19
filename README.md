@@ -34,10 +34,10 @@ func (r *repository) FindById(ctx context.Context, id string) optional.Optional[
   // retrieve the entity in some way
 
   if !entityWasFound {
-    return optional.EmptyOptional[Entity]()
+    return optional.Empty[Entity]()
   }
 
-  return optional.OptionalOf(&entity)
+  return optional.Of(&entity)
 }
 ```
 
